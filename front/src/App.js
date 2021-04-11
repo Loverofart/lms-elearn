@@ -5,12 +5,16 @@ import './css/props.css';
 //commons
 import Sidebar from './common/sidebar';
 import HomePage from './common/home';
+import RightBar from './common/rightbar';
 
 function App() {
   return (
     <div className="App flex">
       <Sidebar />
-      <HomePage/>
+      <div className="app-content">
+        <HomePage />
+      </div>
+      <RightBar />
     </div>
   );
 }

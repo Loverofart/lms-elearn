@@ -21,9 +21,6 @@ function Sidebar(){
         <a href={nav[i].slug} className={"link noul flex gray" + (currentPage === nav[i].slug ? " active" : "")}>
           <FeatherIcon icon={nav[i].icon} className="icon s20"/>
           <h2 className="lbl s20">{nav[i].label}</h2>
-          currentPage = {currentPage}
-          <br/>
-          nav slug = {nav[i].slug}
         </a>
       </li>
     );
@@ -32,7 +29,8 @@ function Sidebar(){
   return (
     <div className="sidebar fixed">
       <a href="#" className="logo bl">
-        <img src={logo} className="bl" />
+        <img src={logo} className="" />
+        <span className="aic logo-title c333 s24">Minjin's Project</span>
       </a>
 
       <ul className="nav">
